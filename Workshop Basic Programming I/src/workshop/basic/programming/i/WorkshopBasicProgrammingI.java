@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import java.sql.*;
 
 /**
  *
@@ -74,6 +73,9 @@ public class WorkshopBasicProgrammingI {
             }catch(Exception ex){
                 ex.printStackTrace();
             }*/
+        // Part XII Threading
+            ThreadDemo tryThreading = new ThreadDemo();
+            tryThreading.RunThreadDemo();
             
     }
     

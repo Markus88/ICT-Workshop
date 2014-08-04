@@ -34,6 +34,7 @@ public class DBConnect {
             
             String query = "select * from airplane";
             rs = st.executeQuery(query);
+            System.out.println("--- Starting Database withdraw! ---");
             System.out.println("Records from Database");
             while(rs.next()){
                 int id = rs.getInt("id");
@@ -45,6 +46,7 @@ public class DBConnect {
                 System.out.println("ID: "+id+". Airplane: "+airplaneName+". passengers seats: "+passengers+". Cruise speed: "
                 +cruiseSpeed+". Fuel capacity: "+fuelCapacity+". Fuel burn rate: "+fuelBurnrate);
             }
+            System.out.println("End of database records!");
         }catch(SQLException ex){
             System.out.println(ex);
         }
