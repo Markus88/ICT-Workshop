@@ -74,9 +74,21 @@ public class WorkshopBasicProgrammingI {
                 ex.printStackTrace();
             }*/
         // Part XII Threading
-            ThreadDemo tryThreading = new ThreadDemo();
-            tryThreading.RunThreadDemo();
-            
+            /*ThreadDemo tryThreading = new ThreadDemo();
+            tryThreading.RunThreadDemo();*/
+        // Part XIII Threading 2
+                ThreadDemo2 R1 = new ThreadDemo2( "Thread::1");
+                R1.start();
+
+                ThreadDemo2 R2 = new ThreadDemo2( "Thread::2");
+                R2.start();
+                
+                ThreadDemo2 R3 = new ThreadDemo2( "Thread::3");
+                R3.start();
+                
+                ThreadDemo2 R4 = new ThreadDemo2( "Thread::4");
+                R4.start();
+                    
     }
     
         // Part X "Methods & Loops & Arrays"
